@@ -1,0 +1,19 @@
+<ion-view title="Encyklopedia" class="bar-positive">
+        <div class="bar bar-subheader item-input-inset bar-light">
+          <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" ng-model="query" placeholder="Wyszukaj wpisując nazwę urazu"></input>
+          </label>
+        </div>
+      <ion-content class="has-subheader">
+        <ion-list>
+          <ion-item ng-repeat="item in encyklopedia | filter: query" href="#/tab/encyklopedia/{{item.id}}">
+          <h2>{{item.schorzenie}}</h2>
+          <h3>{{item.ryzyko_wystapienia}}</h3>
+          <p>{{item.opis1 | limitTo: 30}} {{ item.opis1.length > 30 ? '&hellip;' : ''}}</p>
+          </ion-item>
+        </ion-list>
+
+
+      </ion-content>
+      </ion-view>

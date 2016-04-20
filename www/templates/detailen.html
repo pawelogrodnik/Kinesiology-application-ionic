@@ -1,0 +1,17 @@
+<ion-header-bar class="bar-positive">
+	<h2 class="title">Szczegóły</h2>
+</ion-header-bar>
+
+<ion-view title="Szczegóły">
+	<ion-content>
+		<ion-list class="list-inset">
+		   <ion-item class="item-text-wrap" ng-repeat="item in encyklopedia | filter: { id: whichencyklop }">
+             <h2>{{item.schorzenie}}</h2>
+             <h3>Powiązany z: {{item.ryzyko_wystapienia}}</h3>
+             <p>{{item.opis1}}</p>
+             <p>{{item.opis2}}</p>
+             <p>{{item.opis3}}</p>
+         </ion-item>
+      </ion-list>
+	</ion-content>
+</ion-view>

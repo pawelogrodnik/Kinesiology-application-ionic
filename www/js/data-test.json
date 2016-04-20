@@ -1,0 +1,106 @@
+{
+  "encyklopedia": [
+    {
+      "schorzenie": "Bark Zamrożony (PHS)",
+      "id":"bark_zamrozony",
+      "ryzyko_wystapienia": "cukrzyca, nadczynność tarczycy, choroba niedokrwienna serca",
+      "opis1": "Zarostowe zapalenie torebki stawowej charakteryzuje się obecnością zrostów torebki stawowej stawu ramiennego, które ograniczają ogólną objętość przestrzeni stawowej. Zrosty te powodują bolesne ograniczenia ruchów czynnych i biernych w stawie we wszystkich płaszczyznach. ",
+      "opis2": "Zarostowe zapalenie torebki stawowej ma związek z takimi chorobami wewnętrznymi jak cukrzyca, nadczynność tarczycy, choroba niedokrwienna serca, zapalenie stawów czy spondyloza szyjna.",
+      "opis3": "W badaniu fizykalnym stwierdza się utratę biernej rotacji zewnętrznej, co ułatwia odróżnienie od dolegliwości w stożku rotatorów. Występuje również brak zmian w RTG. PO postawieniu diagnozy konieczne jest dynamiczne leczenie mające na celu powrót mobilności stawu. Jeśli nie dojdzie do poprawy po 3-miesięcznej terapii konieczna jest interwencja chirurgiczna. Zabiegi fizykalne mają na celu zmniejszenie bólu, usprawnieniu krążenia oraz zwiększeniu rozciągliwości przykurczonych struktur."
+    }, 
+    {
+      "schorzenie": "Chondromalacja rzepki",
+      "id":"chondromalacja_rzepki",
+      "ryzyko_wystapienia": "płaskostopie, koślawość kolan",
+      "opis1": "Chondromalacja rzepki inaczej zwana jest rozmiękaniem chrząstki stawowej rzepki. W wyniku chondromolacji jest ona zbyt miękka, popękana lub z ubytkami - nie spełnia zatem wymaganych warunków - sprężystości i twardości i nie chroni należycie warstw głębiej leżących - tkanki podchrzęstnej oraz kostnej.",
+      "opis2": "Uszkodzona w wyniku degeneracji chrząstka stawowa rzepki powoduje przenoszenie obciążeń w głębsze, bardziej unerwione warstwy, co powoduje ból i nawracające objawy stanu zapalnego kolana.",
+      "opis3": "Bardzo ważne jest zwracanie uwagi na wszelkiego rodzaju bóle i problemy związane z kolanem i szybka konsultacja z lekarzem. Zaawansowane postaci tej choroby objawiają się wyroślami kostnymi na brzegach rzepki oraz wysiękami z kolana. Chorobę rozpoznaje się najczęściej podczas badania artroskopowego, które polega na wprowadzeniu do wnętrza stawu specjalnej metalowej rury z układem optycznym, czyli tzw. artroskopu i bezpośrednim oglądaniu (wziernikowaniu) struktur wewnątrzstawowych."
+    },
+    {
+      "schorzenie": "Monday",
+      "id":"monday3",
+      "ryzyko_wystapienia": "Art in Full Color",
+      "opis1": "The first day of CAC events and exhibits is kicked off under the theme of Art in Full Color From a demonstration in graffiti art on a wall of the Rousseau Room, to the exhibit of colorful glazed modern glassware in the Dover Hall, Art in Full Color will get CAC started in full swing!",
+      "opis2": "Water in Art is the theme for the second day, as art students from around the world gather at the Fountain of Intrigue in the gardens of Hotel Contempo to create ice sculptures",
+      "opis3": "Jennifer Jerome, a native of New Orleans, whose work has centered around abstract images"
+    },
+    {
+      "schorzenie": "Monday",
+      "id":"monday4",
+      "ryzyko_wystapienia": "Art in Full Color",
+      "opis1": "The first day of CAC events and exhibits is kicked off under the theme of Art in Full Color From a demonstration in graffiti art on a wall of the Rousseau Room, to the exhibit of colorful glazed modern glassware in the Dover Hall, Art in Full Color will get CAC started in full swing!",
+      "opis2": "Water in Art is the theme for the second day, as art students from around the world gather at the Fountain of Intrigue in the gardens of Hotel Contempo to create ice sculptures",
+      "opis3": "Jennifer Jerome, a native of New Orleans, whose work has centered around abstract images"
+    },
+    {
+      "schorzenie": "Monday",
+      "id":"monday5",
+      "ryzyko_wystapienia": "Art in Full Color",
+      "opis1": "The first day of CAC events and exhibits is kicked off under the theme of Art in Full Color From a demonstration in graffiti art on a wall of the Rousseau Room, to the exhibit of colorful glazed modern glassware in the Dover Hall, Art in Full Color will get CAC started in full swing!",
+      "opis2": "Water in Art is the theme for the second day, as art students from around the world gather at the Fountain of Intrigue in the gardens of Hotel Contempo to create ice sculptures",
+      "opis3": "Jennifer Jerome, a native of New Orleans, whose work has centered around abstract images"
+    }
+  ],
+    "kinesio": [
+    {
+      "czescCiala":"Kolano",
+      "id":"kolano1",
+      "thumbnail":"img/kolano1-1_thumbnail.jpg",
+      "schorzenia":"chondromalacja rzepki, przeprost stawu kolanowego, uszkodzenie więzadła krzyżowego przedniego kolana (ACL)",
+      "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster Y 20 cm",
+      "zapotrzebowanieimg": "img/kolano1-1_spec.jpg",
+      "opisKrokPierwszy":"Usiądź na krześle i przy zgiętym kolanie przyklej koniec plastra Y na udzie, a jego ramiona wokół rzepki",
+      "imgKrokPierwszy":"img/kolano1-1.jpg",
+      "opisKrokDrugi":"Przyklej plaster I pod rzepką.",
+      "imgKrokDrugi":"img/kolano1-2.jpg"
+   },
+    {
+      "czescCiala":"Łokieć",
+      "id":"lokiec1",
+      "thumbnail":"img/lokiec1-1_thumbnail.jpg",
+      "schorzenia":"przeprost stawu łokciowego, łokieć tenisisty, łokieć golfisty",
+      "zapotrzebowanie":"1x plaster I 30 cm, 1x plaster X 20 cm",
+      "zapotrzebowanieimg": "img/lokiec1_spec.jpg",
+      "opisKrokPierwszy":"Przy zaciśniętej pięści naklej plaster I za łokciem, a następnie wzdłuż przedramienia.",
+      "imgKrokPierwszy":"img/lokiec1-1.jpg",
+      "opisKrokDrugi":"Przyklej plaster X w centralnym punkcie łokcia rozmieszczająć skrzydełka symetrycznie.",
+      "imgKrokDrugi":"img/lokiec1-2.jpg"
+  },
+  {
+      "czescCiala":"Plecy",
+      "id":"plecy1",
+      "thumbnail":"img/plecy1-1_thumbnail.jpg",
+      "schorzenia":"zespół bolowy odcinka lędźwiowego kręgosłupa",
+      "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster Y 25 cm",
+      "zapotrzebowanieimg": "img/plecy1_spec.jpg",
+      "opisKrokPierwszy":"Pochyl się do przodu i zaczep plaster Y na dolnej części kręgosłupa. Przyklej ramiona plastra zgodnie z rysunkiem.",
+      "imgKrokPierwszy":"img/plecy1-1.jpg",
+      "opisKrokDrugi":"Przyklej plaster I prostopadle do poprzedniego.",
+      "imgKrokDrugi":"img/plecy1-2.jpg"
+  },
+  {
+      "czescCiala":"Stopa",
+      "id":"stopa1",
+      "thumbnail":"img/stopa1-1_thumbnail.jpg",
+      "schorzenia":"palce młotkowate, peknięcia kości śródstopia",
+      "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster wachlarz 20 cm",
+      "zapotrzebowanieimg": "img/stopa1_spec.jpg",
+      "opisKrokPierwszy":"Przyklej plaster wachlarz na stopie, zaczynając od pięty. Ramiona rozprowadź na stopie.",
+      "imgKrokPierwszy":"img/stopa1-1.jpg",
+      "opisKrokDrugi":"Plaster I przyklej wokół stopy.",
+      "imgKrokDrugi":"img/stopa1-2.jpg"
+  },
+  {
+      "czescCiala":"Nadgarstek",
+      "id":"nadgarstek1",
+      "thumbnail":"img/nadgarstek1-1_thumbnail.jpg",
+      "schorzenia":"zespół kanału nadgarstka, skręcenie palca ręki",
+      "zapotrzebowanie":"1x plaster I 25 cm, 1x plaster I 20 cm",
+      "zapotrzebowanieimg": "img/nadgarstek1_spec.jpg",
+      "opisKrokPierwszy":"Zegnij nadgarstek i przyklej plaster I 25 cm jak zaprezetowano na rys. 1.",
+      "imgKrokPierwszy":"img/nadgarstek1-1.jpg",
+      "opisKrokDrugi":"Przyklej plaster I 20 cm wokół nadgarstka",
+      "imgKrokDrugi":"img/nadgarstek1-2.jpg"
+  }
+  ]
+}

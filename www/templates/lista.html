@@ -1,0 +1,18 @@
+<ion-view title="Lista instrukcji" class="bar-positive">
+        <div class="bar bar-subheader item-input-inset bar-light">
+          <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" ng-model="query" placeholder="Wyszukaj wpisując uraz lub część ciała"></input>
+          </label>
+        </div>
+      <ion-content class="has-subheader">
+        <ion-list>
+          <ion-item ng-repeat="item in kinesio | filter: query" class="item-thumbnail-left item-text-wrap" href="#/tab/list/{{item.id}}">
+          <img src="{{item.thumbnail}}">
+          <h2>{{item.czescCiala}}</h2>
+          <h3>Zalecane na urazy: {{item.schorzenia}}</h3>
+          <p>{{item.opisKrokPierwszy | limitTo: 50}} {{ item.opisKrokPierwszy.length > 30 ? '&hellip;' : ''}}</p>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+      </ion-view>

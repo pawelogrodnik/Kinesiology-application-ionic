@@ -1,0 +1,23 @@
+<ion-header-bar class="bar-positive">
+	<h2 class="title">Szczegóły</h2>
+</ion-header-bar>
+
+<ion-view title="Szczegóły">
+	<ion-content>
+		<ion-list class="list-inset">
+		   <ion-item class="item-text-wrap" style="text-align: center" ng-repeat="item in kinesio | filter: { id: whichkinesio }">
+			      <h2>{{item.czescCiala}}</h2>
+               <h3>{{item.schorzenia}}</h3>
+               <p>____________________________________</p>
+               <p><strong>Potrzebujesz</strong>: {{item.zapotrzebowanie}}</p>
+               <img src="{{item.zapotrzebowanieimg}}">
+               <p>{{item.opisKrokPierwszy}}</p>
+               <img src="{{item.imgKrokPierwszy}}">              
+               <p>{{item.opisKrokDrugi}}</p>
+               <img src="{{item.imgKrokDrugi}}">
+               <p>{{item.opisKrokTrzeci}}</p>               
+               <img src="{{item.imgKrokTrzeci}}">
+            </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
