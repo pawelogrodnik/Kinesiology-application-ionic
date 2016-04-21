@@ -1,41 +1,24 @@
 /* Empty. Add your own CSS if you like */
 .slider {
 	text-align: center;
+    height: 100%;
 }
 
-.slider-pager {
-	bottom: 10vh;
+.scroll {
+    height: 100%;
+    --min-height: 100%;
 }
 
-
-.slider-red {
-	background-color: red;
-
-}
 .slider-blue {
 	border-color: #0c60ee;
     background-color: #387ef5;
     background-image: linear-gradient(rgb(41, 106, 212) 0%, rgb(78, 142, 247) 100%);
     color: #fff;
-	
-}
-.slider-yellow {
-	background-color: yellow;	
-}
-
-div.slider-text p{
-	text-align: center;
-	margin: auto;
-	max-width: 90%;
-	margin: 0;
-	top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) 
+	height: 100%;
 }
 
 div.container4 {
-	height: 100vh;
+	height: 100%;
     position: relative
 }
 
