@@ -111,3 +111,22 @@ angular.module('starter', ['ionic'])
       $scope.whichencyklop = $state.params.aId;
     })
 }])
+
+.controller("MailComposer", function($scope) {
+  $scope.sendEmail = function () {
+    if (window.plugins && window.plugins.emailComposer) {
+      window.plugins.emailComposer.showEmailComposerWithCallback(function(result) {
+        console.log("email succes");
+      },
+      "Wpisz temat wiaodmości", // Temat wiadomości
+      "",                       // Wiadomość
+      ["mkpawell@gmail.com"],   // Wysyłany na podany adres email, tablica
+      null,                     // CC - Carbon Copy
+      null,                     // BCC - Blind Carbon Copy
+      false,                    // Zawartość HTML w treści
+      null,                     // Załączniki, tablica
+      null                      // Ścieżki do załączników, tablica
+      );
+    }
+  }
+})
