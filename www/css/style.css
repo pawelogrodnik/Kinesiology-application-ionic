@@ -9,6 +9,11 @@
     --min-height: 100%;
 }
 
+#map {
+    width: 100%;
+    height: 100%;
+}
+
 .slider-blue {
 	border-color: #0c60ee;
     background-color: #387ef5;
@@ -17,16 +22,20 @@
 	height: 100%;
 }
 
-div.container4 {
+div.container {
 	height: 100%;
     position: relative
 }
 
-div.container4 p {
+div.container p {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) 
+}
+
+.markerTitle {
+    font-weight: bold;
 }

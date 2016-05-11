@@ -46,7 +46,7 @@
       "czescCiala":"Kolano",
       "id":"kolano1",
       "thumbnail":"img/kolano1-1_thumbnail.jpg",
-      "schorzenia":"chondromalacja rzepki, przeprost stawu kolanowego, uszkodzenie więzadła krzyżowego przedniego kolana (ACL)",
+      "schorzenia":"korekcja ustawienia rzepki, uszkodzenie więzadła krzyżowego przedniego kolana (ACL)",
       "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster Y 20 cm",
       "zapotrzebowanieimg": "img/kolano1-1_spec.jpg",
       "opisKrokPierwszy":"Usiądź na krześle i przy zgiętym kolanie przyklej koniec plastra Y na udzie, a jego ramiona wokół rzepki",
@@ -70,7 +70,7 @@
       "czescCiala":"Plecy",
       "id":"plecy1",
       "thumbnail":"img/plecy1-1_thumbnail.jpg",
-      "schorzenia":"zespół bolowy odcinka lędźwiowego kręgosłupa",
+      "schorzenia":"zespół bólowy odcinka lędźwiowego kręgosłupa",
       "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster Y 25 cm",
       "zapotrzebowanieimg": "img/plecy1_spec.jpg",
       "opisKrokPierwszy":"Pochyl się do przodu i zaczep plaster Y na dolnej części kręgosłupa. Przyklej ramiona plastra zgodnie z rysunkiem.",
@@ -101,6 +101,44 @@
       "imgKrokPierwszy":"img/nadgarstek1-1.jpg",
       "opisKrokDrugi":"Przyklej plaster I 20 cm wokół nadgarstka",
       "imgKrokDrugi":"img/nadgarstek1-2.jpg"
-  }
+  },
+  {
+      "czescCiala":"Szyja",
+      "id":"szyja1",
+      "thumbnail":"img/szyja1-1_thumbnail.jpg",
+      "schorzenia":"korekcja wyrosta kolczystego kręgu C7",
+      "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster Y 15 cm",
+      "zapotrzebowanieimg": "img/szyja1-1_spec.jpg",
+      "opisKrokPierwszy":"Nieznacznie pochyl głowę i przyklej plaster Y zaczynając od środkowej części kręgosłupa, skrzydełka plastra przyklej symetrycznie po obudwu stronach szyi.",
+      "imgKrokPierwszy":"img/szyja1-1.jpg",
+      "opisKrokDrugi":"Naklej plaster I jak na rys. 2",
+      "imgKrokDrugi":"img/szyja1-2.jpg"
+  },
+  {
+      "czescCiala":"Bark",
+      "id":"bark1",
+      "thumbnail":"img/bark1-1_thumbnail.jpg",
+      "schorzenia":"niestabilność przednia stawu ramiennego",
+      "zapotrzebowanie":"1x plaster I 20 cm, 1x plaster Y 20 cm",
+      "zapotrzebowanieimg": "img/bark1-1_spec.jpg",
+      "opisKrokPierwszy":"Przyklej nasadę plastra Y dokładnie na środku dolnej części ramienia. Umieszczając ręke za plecami przyklej skrzydełko plastra z przodu barku. Umieszczająć ręke z przodu przyklej drugie skrzydełko po przeciwnej stronie ramienia (symetrycznie).",
+      "imgKrokPierwszy":"img/bark1-1.jpg",
+      "opisKrokDrugi":"Naklej plaster I na ramieniu",
+      "imgKrokDrugi":"img/bark1-2.jpg"
+  },
+  {
+      "czescCiala":"Łydka",
+      "id":"lydka1",
+      "thumbnail":"img/lydka1-1_thumbnail.jpg",
+      "schorzenia":"naciągnięcie/przeciążenie ścięgna Achillesa",
+      "zapotrzebowanie":"1x plaster I 30 cm, 1x plaster I 20 cm, 1x plaster Y 30 cm",
+      "zapotrzebowanieimg": "img/lydka1-1_spec.jpg",
+      "opisKrokPierwszy":"Rozciągnij ścięgno Achillesa poprzez uniesienie przedniej części stopy, przyklej plaster Y powyżej Achillesa, skrzydełka naklej symetrycznie po bokach kończyny",
+      "imgKrokPierwszy":"img/lydka1-1.jpg",
+      "opisKrokDrugi":"Przyklej plaster I 30 cm zaczynająć od pięty w górę",
+      "imgKrokDrugi":"img/lydka1-2.jpg",
+      "opisKrokTrzeci":"Plaster I 20 cm naklej na lydce jak na rys. 3",
+      "imgKrokTrzeci":"img/lydka1-3.jpg"
+  }      
   ]
 }

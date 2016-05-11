@@ -1,9 +1,14 @@
 <ion-view class="bar-positive" title="Kontakt">
-	<ion-content class="padding" ng-controller="MailComposer" class="">
-		
-				<button class="button" ng-click="sendEmail()" style="pading-top: 15%">
-					Wyślij wiadomość
-				</button>
-			
+	<ion-content class="padding">
+		<div class="item item-text-wrap" style="text-align: center;">
+			<p>Jeśli masz jakiekolwiek pytania dotyczące treści przedstawionych w tej aplikacji, chcesz zgłosić zauważone błędy lub chcesz napisać do autora z innego powodu, nie wahaj się kliknąć przycisku poniżej!</p>
+			<br />
+
+			<button class="button" ng-click="sendEmail()">Wyślij wiadomość</button>
+			<button class="button button-light" ng-click="showAlert()">
+			    <i class="ion-android-alert"></i>
+			</button>	
+
+  		</div>			
 	</ion-content>
 </ion-view>
