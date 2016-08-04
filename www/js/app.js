@@ -123,12 +123,12 @@ angular.module('starter', ['ionic'])
 }])
 //kontroler do zakładki encyklopedia
 .controller('EncyklopediaController', ['$scope', '$http', '$state', function($scope, $http, $state) {
-    $http.get('js/data-test.json').success(function(data) {
-      //wczytanie pliku .json
-      $scope.encyklopedia = data.encyklopedia;
-      //wyciagniecie potrzebnych danych z .jsona
-      $scope.whichencyklop = $state.params.aId;
-    })
+  $http.get('js/data-test.json').success(function(data) {
+    //wczytanie pliku .json
+    $scope.encyklopedia = data.encyklopedia;
+    //wyciagniecie potrzebnych danych z .jsona
+    $scope.whichencyklop = $state.params.aId;
+  })
 }])
 
 // kontroler do zakładki kontakt
@@ -144,12 +144,12 @@ angular.module('starter', ['ionic'])
       },
       "Wpisz temat wiadomości", // Temat wiadomości
       "",                       // Wiadomość
-      ["kontakt@gmail.com"],   // Wysyłany na podany adres email, tablica
+      ["kontakt@gmail.com"],    // Wysyłany na podany adres email, tablica
       null,                     // CC - Carbon Copy
       null,                     // BCC - Blind Carbon Copy
       false,                    // Zawartość HTML w treści
       null,                     // Załączniki, tablica
-      null                      // Ścieżki do załączników, tablica
+      null                      // Ścieżki do załącz ników, tablica
       );
     }
   }
@@ -170,140 +170,77 @@ angular.module('starter', ['ionic'])
 
 .controller('MapController', function($scope, $ionicLoading) {
 
-    console.log("Not initialize");
-    google.maps.event.addDomListener(window, 'load', initialize());
+  google.maps.event.addDomListener(window, 'load', init());
 
-    function initialize() {
-      console.log("Initialize");
-      var mapOptions = {
-        center: {lat: 50.0468548, lng: 19.9348337},
-        zoom: 12,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-      };
+  function init() {
+    let mapOptions = {
+      center: {lat: 50.0468548, lng: 19.9348337},
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+    };
 
-      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-      $scope.map = map;
+    let map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    $scope.map = map;
 
-      navigator.geolocation.getCurrentPosition(function(pos) {
-          map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-          var myLocation = new google.maps.Marker({
-              position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
-              map: map,
-              title: "Twoja lokalizacja"
-          });
-      });
-
-      var marker = new google.maps.Marker({
-        position: {lat: 50.0116149, lng: 19.9632955},
+    navigator.geolocation.getCurrentPosition(function(pos) {
+      map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+      var myLocation = new google.maps.Marker({
+        position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
         map: map,
-        title: 'Orteo.pl'
+        title: "Twoja lokalizacja"
       });
+      myLocation.addListener('click', function() {
+        let info = new google.maps.InfoWindow({content: '<div>Tu jestes!</div>'})
+        info.open(map, myLocation);
+      });
+    });
 
-      var marker1 = new google.maps.Marker({
-        position: {lat: 50.0116877, lng: 19.9661474},
+    function coordsFrom(pos, title) {
+      return {
+        position: pos,
         map: map,
-        title: 'Reha-Plus S.A.'
-      });
-
-      var marker2 = new google.maps.Marker({
-        position: {lat: 50.0123767, lng: 20.0401849},
-        map: map,
-        title: 'Aplimedica s.c.'
-      });
-
-      var marker3 = new google.maps.Marker({
-        position: {lat: 50.0247634, lng: 19.9649143},
-        map: map,
-        title: 'Fizjo-strefa'
-      });
-
-      var marker4 = new google.maps.Marker({
-        position: {lat: 50.0576163, lng: 19.9146719},
-        map: map,
-        title: 'SPORTO.COM.PL'
-      });
-
-      var marker5 = new google.maps.Marker({
-        position: {lat: 50.0473872, lng: 19.8896932},
-        map: map,
-        title: 'DoBiegania.pl'
-      });
-
-      var marker6 = new google.maps.Marker({
-        position: {lat: 50.0622331, lng: 19.8705467},
-        map: map,
-        title: 'Splint'
-      });
-
-      var infoMarker = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">Orteo.pl</div>' +
-        '<div class="markerOpis">Sklep ze sprzętem medycznym</div>' +
-        '<div class="markerAdres">Wincentego Witosa 7, Kraków</div>'
-      });
-
-      var infoMarker1 = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">Reha Plus S.A.</div>' +
-        '<div class="markerOpis">Centrum szkoleniowe</div>' +
-        '<div class="markerAdres">Tuchowska 6b, Kraków</div>'
-      });
-
-      var infoMarker2 = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">Aplimedica s.c.</div>' +
-        '<div class="markerOpis">Gabinet medycyny alternatywnej</div>' +
-        '<div class="markerAdres">Drożdżowa 5, Kraków</div>'
-      });
-
-      var infoMarker3 = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">Fizjo-strefa</div>' +
-        '<div class="markerOpis">Specjalista rehabilitacji</div>' +
-        '<div class="markerAdres">Poprzeczna 3, Kraków</div>'
-      });
-
-      var infoMarker4 = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">SPORTO.COM.PL</div>' +
-        '<div class="markerOpis">Sklep z odzieżą sportową</div>' +
-        '<div class="markerAdres">Focha 32, Kraków</div>'
-      });
-
-      var infoMarker5 = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">Splint</div>' +
-        '<div class="markerOpis">Artykuły ortopedyczne</div>' +
-        '<div class="markerAdres">28 Lipca 1943 23A, Kraków</div>'
-      });   
-
-      var infoMarker6 = new google.maps.InfoWindow({
-        content: '<div class="markerTitle">DoBiegania.pl</div>' +
-        '<div class="markerOpis">Sklep z odzieżą sportową</div>' +
-        '<div class="markerAdres">Ks. Józefa 54, Kraków</div>'
-      });          
-
-      marker.addListener('click', function() {
-        infoMarker.open(map, marker)
-      });
-
-      marker1.addListener('click', function() {
-        infoMarker1.open(map, marker1)
-      });
-
-      marker2.addListener('click', function() {
-        infoMarker2.open(map, marker2)
-      });
-
-      marker3.addListener('click', function() {
-        infoMarker3.open(map, marker3)
-      });
-
-      marker4.addListener('click', function() {
-        infoMarker4.open(map, marker4)
-      });
-
-      marker5.addListener('click', function() {
-        infoMarker5.open(map, marker5)
-      });
-
-      marker6.addListener('click', function() {
-        infoMarker6.open(map, marker6)
-      });
-
+        title: title
+      }
     }
+
+    let coords = [
+      coordsFrom({lat: 50.0116149, lng: 19.9632955}, 'Orteo.pl'),
+      coordsFrom({lat: 50.0116877, lng: 19.9661474}, 'Reha-Plus S.A.'),
+      coordsFrom({lat: 50.0123767, lng: 20.0401849}, 'Aplimedica s.c.'),
+      coordsFrom({lat: 50.0247634, lng: 19.9649143}, 'Fizjo-strefa'),
+      coordsFrom({lat: 50.0576163, lng: 19.9146719}, 'SPORTO.COM.PL'),
+      coordsFrom({lat: 50.0473872, lng: 19.8896932}, 'DoBiegania.pl'),
+      coordsFrom({lat: 50.0622331, lng: 19.8705467}, 'Splint')
+    ];
+
+    let markers = coords.map(function(coords) {
+      return new google.maps.Marker(coords)
+    })
+
+     function formatDesc(title, description, address) {
+      return { content: '<div class="markerTitle">'+title+'</div>' +
+             '<div class="markerDescription">'+description+'</div>' +
+             '<div class="markerAddress">'+address+'</div>' }
+    }
+
+    let descriptions = [
+      formatDesc('Orteo.pl', 'Sklep ze sprzętem medycznym', 'Wincentego Witosa 7, Kraków'),
+      formatDesc('Reha-Plus S.A.', 'Centrum szkoleniowe', 'Tuchowska 6b, Kraków'),
+      formatDesc('Aplimedica s.c.','Gabinet medycyny alternatywnej', 'Drożdżowa 5, Kraków'),
+      formatDesc('Fizjo-strefa', 'Specjalista rehabilitacji', 'Poprzeczna 3, Kraków'),
+      formatDesc('SPORTO.COM.PL', 'Sklep z odzieżą sportową', 'Focha 32, Kraków'),
+      formatDesc('DoBiegania.pl', 'Sklep z odzieżą sportową', 'Ks. Józefa 54, Kraków'),
+      formatDesc('Splint', 'Artykuły ortopedyczne', '28 Lipca 1943 23A, Kraków')
+    ];
+
+    let markerInfo = descriptions.map(function(desc) {
+      return new google.maps.InfoWindow(desc)
+    });
+
+    for (let i = 0; i < markers.length; i++) {
+      markers[i].addListener('click', function() {
+        markerInfo[i].open(map, markers[i])
+      });
+    }
+  }
 })
